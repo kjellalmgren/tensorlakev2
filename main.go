@@ -85,6 +85,8 @@ func main() {
 	router.HandleFunc("/segment_training_v32", segments.SegmentTrainingV32).Methods("GET", "POST", "OPTIONS")
 	router.HandleFunc("/segment_training_v4", segments.SegmentTrainingV4).Methods("GET", "POST", "OPTIONS")
 	router.HandleFunc("/segment_evaluation_v4", segments.SegmentEvaluationV4).Methods("GET", "POST", "OPTIONS")
+	router.HandleFunc("/segment_training_v5", segments.SegmentTrainingV5).Methods("GET", "POST", "OPTIONS")
+	router.HandleFunc("/segment_evaluation_v5", segments.SegmentEvaluationV5).Methods("GET", "POST", "OPTIONS")
 	router.HandleFunc("/iris_training_v1", segments.IrisTrainingV1).Methods("GET", "POST", "OPTIONS")
 	router.HandleFunc("/iris_evaluation_v1", segments.IrisEvaluationV1).Methods("GET", "POST", "OPTIONS")
 	//
